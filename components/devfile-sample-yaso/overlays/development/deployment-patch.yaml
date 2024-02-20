@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-yaso
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0040-tenant/tkrw-pr714-0075-0040-app/devfile-sample-yaso@sha256:0eb39a7ac5da26b02d73cbe247999e73ea9bbaffd39ed257d9089e87c08a79a2
+        name: my-nodejs
+        resources: {}
+status: {}
